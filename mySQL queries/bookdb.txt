@@ -1,0 +1,9 @@
+Get all:
+SELECT * FROM book;
+SELECT * FROM author;
+SELECT * FROM publisher;
+
+Get by ID:
+SELECT * FROM book WHERE id=3;
+SELECT * FROM author WHERE id=3;
+SELECT * FROM publisher WHERE id=3;
