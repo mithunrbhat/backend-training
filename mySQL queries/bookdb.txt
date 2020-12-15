@@ -7,3 +7,13 @@ Get by ID:
 SELECT * FROM book WHERE id=3;
 SELECT * FROM author WHERE id=3;
 SELECT * FROM publisher WHERE id=3;
+
+Add Item:
+INSERT INTO book (id, title, totalPages, rating, isbn, publishedDate, authorId, publisherId) VALUES (null, 'shonen', 200, '9/10', 225, '1990/12/01', 4, 5);
+INSERT INTO publisher (id, name, email, contact, established) VALUES (null, 'cobra', 'cobra@bites.com', '9900841845', '1970');
+INSERT INTO author (id, name, email, dob) VALUES (null, 'Dave Batista', 'smack@down.com', '1947/11/01');
+
+Delete Item:
+DELETE FROM book WHERE id=3;
+DELETE FROM author WHERE id=3;
+DELETE FROM publisher WHERE id=3;
