@@ -1,12 +1,31 @@
 Get all:
-SELECT * FROM book;
-SELECT * FROM author;
-SELECT * FROM publisher;
+*   SELECT b.id, title, totalPages, rating, isbn, publishedDate,
+        a.id AS authorId, a.name AS 'authors name', a.email AS 'authors email', a.dob,
+        p.id AS publisherId, p.name AS 'publishers name', p.email AS 'publishers email', p.contact, p.established
+    FROM book b
+    JOIN author a 
+        ON b.authorId = a.id 
+    JOIN publisher p 
+        ON b.publisherId = p.id
+
+*   SELECT * FROM author;
+
+*   SELECT * FROM publisher;
 
 Get by ID:
-SELECT * FROM book WHERE id=3;
-SELECT * FROM author WHERE id=3;
-SELECT * FROM publisher WHERE id=3;
+*   SELECT b.id, title, totalPages, rating, isbn, publishedDate,
+        a.id AS authorId, a.name AS 'authors name', a.email AS 'authors email', a.dob,
+        p.id AS publisherId, p.name AS 'publishers name', p.email AS 'publishers email', p.contact, p.established
+    FROM book b
+    JOIN author a 
+	    ON b.authorId = a.id 
+    JOIN publisher p 
+	    ON b.publisherId = p.id
+    WHERE b.id = 2
+
+*    SELECT * FROM author WHERE id=3;
+
+*    SELECT * FROM publisher WHERE id=3;
 
 Add Item:
 INSERT INTO book (id, title, totalPages, rating, isbn, publishedDate, authorId, publisherId) VALUES (null, 'shonen', 200, '9/10', 225, '1990/12/01', 4, 5);
