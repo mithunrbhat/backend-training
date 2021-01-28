@@ -1,0 +1,60 @@
+{
+    "employee": [
+        {
+            "empId": 1,
+            "empName": "krishanu",
+            "dob": "29.02.1989",
+            "bloodGroup": "ab-ve"
+        },
+        {
+            "empId": 2,
+            "empName": "moinuddin",
+            "dob": "13.03.1998",
+            "bloodGroup": "b+ve"
+        },
+        {
+            "empId": 3,
+            "empName": "mithun",
+            "dob": "11.01.1999",
+            "bloodGroup": "o+ve"
+        }
+    ],
+    "project": [
+        {
+            "projectId": 1,
+            "projectName": "lastPass",
+            "involvedEmpId": [1,2,3],
+            "noOfDays": 7
+        },
+        {
+            "projectId": 2,
+            "projectName": "insta",
+            "involvedEmpId": [2,3],
+            "noOfDays": 12
+        },
+        {
+            "projectId": 3,
+            "projectName": "minesweeper",
+            "involvedEmpId": [1,2],
+            "noOfDays": 3
+        },
+        {
+            "projectId": 4,
+            "projectName": "smoleDB",
+            "involvedEmpId": [1,3],
+            "noOfDays": 2
+        }
+    ],
+    "department": [
+        {
+            "deptId": 1,
+            "deptName": "mentor",
+            "deptEmpIds": [1] 
+        },
+        {
+            "deptId": 2,
+            "deptName": "trainee",
+            "deptEmpIds": [2,3]
+        }
+    ]
+}
