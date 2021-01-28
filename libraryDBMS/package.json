@@ -1,0 +1,26 @@
+{
+  "name": "librarydbms",
+  "version": "1.0.0",
+  "description": "hi",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mithunrbhat/libraryDBMS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mithunrbhat/libraryDBMS/issues"
+  },
+  "homepage": "https://github.com/mithunrbhat/libraryDBMS#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
